@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <title>Power World</title>
+</head>
+
+<body>
+    <div class="form-wrap">
+        <div class="card-wrap">
+            <div class="card-wrap-left">
+                <img src="https://promo.powerworldgyms.com/admin/dist/img/power_world_logo.png" alt="">
+                <h3 class="left-heading">Powerworld Youth program wizard based questionnaire</h3>
+            </div>
+            <div class="card-wrap-right">
+
+                <h5>Parent's Information</h5>
+
+                <!-- Father's Information -->
+                <p class="question-subtitle">Father's Information</p>
+
+                <form action="">
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="fatherName" type="text" class="validate" required>
+                            <label for="fatherName">Name<span class="required-star red-text"> &#9733</span></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="fatherHeight" type="number" class="validate" step=any required>
+                            <label for="fatherHeight">Height (cm)<span class="required-star red-text">
+                                    &#9733</span></label>
+                            <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="fatherWeight" type="number" class="validate" step=any required>
+                            <label for="fatherWeight">Weight (kg)<span class="required-star red-text">
+                                    &#9733</span></label>
+                            <i class="helper-text right input-unit" data-error="kg" data-success="&#10003">kg</i>
+                        </div>
+                    </div>
+
+                    <p><b>Sports Participated</b></p>
+
+                    <!--Sport-1 Selection -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="fSport1" name="fSport1">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="fSport1_Level" name="fSport1_Level">
+                                <option value="" disabled selected>Level</option>
+                                <option value="1">School</option>
+                                <option value="2">Club</option>
+                                <option value="3">National</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Sport-2 Selection -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="fSport2" name="fSport2">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="fSport2_Level" name="fSport2_Level">
+                                <option value="" disabled selected>Level</option>
+                                <option value="1">School</option>
+                                <option value="2">Club</option>
+                                <option value="3">National</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Sport-3 Selection -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="fSport3" name="fSport3">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="fSport3_Level" name="fSport3_Level">
+                                <option value="" disabled selected>Level</option>
+                                <option value="1">School</option>
+                                <option value="2">Club</option>
+                                <option value="3">National</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p><b>Present participating recreational Sport</b></p>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="fRecreationalSport" name="fRecreationalSport">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Mother's Information -->
+                    <p class="question-subtitle">Mother's Information</p>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="MotherName" type="text" class="validate" required>
+                            <label for="MotherName">Name<span class="required-star red-text"> &#9733</span></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="motherHeight" type="number" class="validate" step=any required>
+                            <label for="motherHeight">Height (cm)<span class="required-star red-text">
+                                    &#9733</span></label>
+                            <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="motherWeight" type="number" class="validate" step=any required>
+                            <label for="motherWeight">Weight (kg)<span class="required-star red-text">
+                                    &#9733</span></label>
+                            <i class="helper-text right input-unit" data-error="kg" data-success="&#10003">kg</i>
+                        </div>
+                    </div>
+
+
+                    <p><b>Sports Participated</b></p>
+
+                    <!--Sport-1 Selection -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="mSport1" name="mSport1">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="mSport1_Level" name="mSport1_Level">
+                                <option value="" disabled selected>Level</option>
+                                <option value="1">School</option>
+                                <option value="2">Club</option>
+                                <option value="3">National</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Sport-2 Selection -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="mSport2" name="mSport2">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="mSport2_Level" name="mSport2_Level">
+                                <option value="" disabled selected>Level</option>
+                                <option value="1">School</option>
+                                <option value="2">Club</option>
+                                <option value="3">National</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Sport-3 Selection -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="mSport3" name="mSport3">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="mSport3_Level" name="mSport3_Level">
+                                <option value="" disabled selected>Level</option>
+                                <option value="1">School</option>
+                                <option value="2">Club</option>
+                                <option value="3">National</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p><b>Present participating recreational Sport</b></p>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="mRecreationalSport" name="mRecreationalSport">
+                                <option value="" disabled selected>Select Sport</option>
+                                <option value="1">Sport 1</option>
+                                <option value="2">Sport 2</option>
+                                <option value="3">Sport 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn waves-effect waves-light right custom-btn" name="next">Submit
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        var currYear = (new Date()).getFullYear();
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('select').formSelect();
+            });
+        });
+    </script>
+</body>
+
+</html>

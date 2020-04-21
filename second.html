@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <title>Power World</title>
+</head>
+
+<body>
+  <div class="form-wrap">
+    <div class="card-wrap">
+      <div class="card-wrap-left">
+        <img src="https://promo.powerworldgyms.com/admin/dist/img/power_world_logo.png" alt="">
+        <h3 class="left-heading">Powerworld Youth program wizard based questionnaire</h3>
+      </div>
+      <div class="card-wrap-right">
+
+        <h5>Child's Information</h5>
+
+        <form action="">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input type=text name="todayDate" id="todayDate" class="datepicker validate" required>
+              <label for="todayDate">Today's Date<span class="required-star red-text"> &#9733</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate" required>
+              <label for="name">Name<span class="required-star red-text"> &#9733</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <Span for="gender">Gender </Span>
+              <label class="gender-option">
+                <input name="gender" type="radio" value="male" checked />
+                <span>Male</span>
+              </label>
+              <label class="gender-option">
+                <input name="gender" type="radio" value="female" />
+                <span>Female</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type=text name="bdate" id="bdate" class="datepicker validate" required>
+              <label for="bdate">Date of Birth<span class="required-star red-text"> &#9733</span></label>
+            </div>
+            <div class="input-field col s6">
+              <input id="name" type="text" disabled class="validate">
+              <label for="name">Age</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="grade" type="text" class="validate">
+              <label for="grade">Grade</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="class" type="text" class="validate">
+              <label for="class">Class</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="school" type="text" class="validate" required>
+              <label for="school">School<span class="required-star red-text"> &#9733</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="parentMobile" type="number" class="validate" required>
+              <label for="parentMobile">Parent Mobile<span class="required-star red-text"> &#9733</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" required>
+              <label for="email">Parent Email<span class="required-star red-text"> &#9733</span></label>
+            </div>
+          </div>
+
+
+          <p><b>If you (child) were to compete against your classmates, of the same gender, in the following activities
+              what would
+              your rank be for these activities?</b></p>
+
+          <p><b>A. First, how many students of your same gender are in your class?</b><span
+              class="required-star red-text"> &#9733</span></p>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="stdCount" type="number" class="validate" required>
+              <label for="stdCount">Answer</label>
+            </div>
+          </div>
+
+
+          <div class="question-card mobile-hidden">
+            <div class="title">
+              <p class="mobile-title"><b>If your classmates and you took part in a</b></p>
+            </div>
+            <div class="rank">
+              <p class="mobile-title"><b>Rank/Postion</b></p>
+            </div>
+          </div>
+
+          <div class="question-card mobile-visible">
+            <div class="title">
+              <p class="mobile-title">Mention <b>"Rank/Postion"</b> for following qusestions</p>
+              <p class="mobile-title"><b>If your classmates and you took part in a</b></p>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q1] </b><span>30-meter Race, what would be your position at this race?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q1" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q2] </b><span>100-meter Race, what would be your position at this race?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q2" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q3] </b><span>400-meter Race, what would be your position at this race?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q3" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q4] </b><span>5 rounds around a cricket grounds, what would be your position?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q4" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q5] </b><span>Placing a 2kg ball at chest level and throwing it as far as possible?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q5" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q6] </b><span>Standing Long Jump, what would be your position?<span
+                    class="required-star red-text"> &#9733</span></span></p>
+            </div>
+            <div class="rank">
+              <input id="q6" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q7] </b><span>Standing Vertical Jump, what would be your position?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q7" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q8] </b><span>The maximum Push-Ups possible in one minute, what’s your position?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q8" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q9] </b><span>The maximum Sit-Ups possible in one minute, what’s your position?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q9" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q10] </b><span>Throw a cricket ball as far as possible, what would be your position?</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q10" type="number" class="validate" required>
+            </div>
+          </div>
+
+          <p class="mobile-sub-title"><b>Physical Measures</b></p>
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q11] </b><span>Height (cm)</span><span class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q11" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q12] </b><span>Weight (kg)</span><span class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q12" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">kg</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q13] </b><span>Right wrist circumference (cm)</span><span class="required-star red-text">
+                  &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q13" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q14] </b><span>Right Tip of Middle Finger to Right Wrist (cm)</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q14" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q15] </b><span>Right Wrist to Right Elbow (cm)</span><span class="required-star red-text">
+                  &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q15" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q16] </b><span>Right Elbow to Right Shoulder (cm)</span><span class="required-star red-text">
+                  &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q16" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q17] </b><span>Right Shoulder to Left Shoulder (cm)</span><span class="required-star red-text">
+                  &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q17" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q18] </b><span>Left Shoulder to Left Hip (feel the hip bone) (cm)</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q18" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q19] </b><span>Left Hip to the back of the Left Knee (cm)</span><span
+                  class="required-star red-text"> &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q19" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="title">
+              <p><b> [Q20] </b><span>Left Knee to the Left Heel (cm)</span><span class="required-star red-text">
+                  &#9733</span></p>
+            </div>
+            <div class="rank">
+              <input id="q20" type="number" class="validate" step=any required>
+              <i class="helper-text right input-unit" data-error="cm" data-success="&#10003">cm</i>
+            </div>
+          </div>
+
+          <p><b>Note : All above <span class="required-star red-text"> &#9733</span> content are compulsory to fill</b>
+          </p>
+
+        </form>
+
+        <a href="third.html" class="btn waves-effect waves-light right custom-btn" name="next">Next
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    var currYear = (new Date()).getFullYear();
+    $(document).ready(function () {
+      $('.datepicker').datepicker({
+        maxDate: new Date(),
+        yearRange: [1990, currYear]
+      }
+      );
+    });
+  </script>
+</body>
+
+</html>
